@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>How the web work</title>
+</head>
+<body>
+    <div class="header">
+        <h2>How the web work</h2>
+    </div>
+    <div class="content">
+        <div  class="item">
+            <div>
+                <h4>A few words about Internet</h4>
+                <p>The Internet is a global network of computers that communicate with each other. It started in the 60's as ARPANET and it 
+                    was an academic research network funded by the military in USA. In the 90's it became a global commercial network that 
+                    today is used by billions of people around the world. The Web is a collection of information that is accessed via Internet.
+                </p>
+            </div>
+            <img src="images/internet.jpg">
+            
+        </div>
+        <div class="item">
+            <img src="images/router.png">
+            <div>
+                <h4>How does the Internet work</h4>
+                <p>
+                    Computers can connect to the internet via network devices, called routers. When you connect a computer to the internet and visit a web page, it communicates with an other computer, which is called a server and it stores the data of 
+                    that web page. Your computer, which is the client, sends a request to the server to let it know that you want
+                    to access the web page and the server sends back a response. That response is a copy of the webpage that will be downloaded to the client and it 
+                    will be displayed to the web browser. 
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <div>
+                <h4>Rules of communication</h4>
+                <p>
+                    The communication between the server and the client has to follow some rules in order to be successful. Those rules are defined by the internet protocols
+                    like TCP(Transfer Control Protocol), IP(Internet Protocol) and HTTP(Hypertext Transfer Protocol). These protocols are the transport mechanisms that data use to
+                    travel across the internet.
+                </p>
+            </div>
+            <img src="images/protocols.png">
+        </div>
+        <div class="item">
+            <img src="images/how-dns-works.jpg">
+            <div>
+                <h4>IP addresses and DNS</h4>
+                <p>Every web page has an address called IP address that looks like 128.26.85.03 and it represents the web pages's location on the web. But because it is not
+                easy to use and remember, we have DNSs(Domain Name Server) that lets us use human friendly names like google.com or facebook.com etc, and translate them into IP addresses. 
+                </p> 
+            </div>
+        </div>
+        <div class="item">
+            <div>
+                <h4>How data travels</h4>
+                <p>All the data of a web page that are transferred from a computer to another can't travel at once. The web page is divided into many little pieces called packets, that each one cary information about its 
+                    origin and its destination as well as how to reassemble into the original web page. This is accomplished with TCP and UDP communication protocols, both of which are used to transfer bits of data
+                    over the Internet.
+                </p>
+            </div>
+            <img src="images/tcp.png">
+        </div>
+        <div class="item">
+            <img src="images/http.png">
+            <div>
+                <h4>From data packets to HTML</h4>
+                <p>
+                    On top of the communication protocols sits the application protocol HTTP, which describes the format of the transferred packages. With HTTP clients communicate with servers
+                    and exchange files. When a client makes an HTTP request for an HTML page the server sends back an HTTP response with an HTML file. HTML is a markup language that
+                    describes the structure of a web page. HTML, CSS and javascript are the basic tools that are needed to create a user friendly, interactive and beautiful web page. 
+                </p>
+            </div>
+        </div>
+        <div class="sumup">
+            <p>To sum up, the internet consists of computers which can be clients or servers and they are connected to each other with routers. Servers store web pages and every web page has its own IP address. 
+                A client uses HTTP protocol to sent a request to a server asking for a web page with a certain domain name. A DNS server matches up the domain name with the IP address.
+                The server get the request and sends as a response TCP packets that contain the page's data. The client reassembles the web page and it is displayed for the user.
+            </p>
+            <img src="images/request.png"  style="width: 800px; object-fit: contain;">
+        </div>
+    </div>
+</body>
+</html>
